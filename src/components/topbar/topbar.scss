@@ -8,10 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
-    scrollbar-width: none;
-    &::-webkit-scrollbar{
-            display: none;
-    }
+    transition: all 1s ease ;
 
     .wrapper{
         padding: 10px 30px;
@@ -47,6 +44,10 @@
             }
         } 
         .right{
+            scrollbar-width: none;
+            &::-webkit-scrollbar{
+                display: none;
+            }
     
             .hamburger{
                 width: 32px;
@@ -72,10 +73,7 @@
   &.active{
       background-color: $mainColor;
       color: white;
-      scrollbar-width: none;
-      &::-webkit-scrollbar{
-            display: none;
-    }
+      
 
       .hamburger{
           span{
